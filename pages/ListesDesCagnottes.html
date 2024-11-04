@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Cagnottes</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans overflow-y-auto h-screen">
+
+    <!-- Header -->
+    <header class="flex justify-between items-center p-4 bg-white shadow-md sticky top-0 z-10">
+        <div class="flex items-center space-x-4">
+            <!-- Logo -->
+            <div class="text-2xl font-bold text-green-600">Cagnos</div>
+            <!-- Search Bar -->
+            <div class="relative">
+                <input type="text" placeholder="Rechercher..." class="px-4 py-2 border rounded-full w-80 focus:outline-none focus:border-green-500">
+                <div class="absolute right-2 top-2 text-green-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16a8 8 0 1116 0 8 8 0 01-16 0zm12-2a8 8 0 11-4.5-7.75"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation Links -->
+        <nav class="flex space-x-6 text-green-600">
+            <a href="#" class="hover:text-green-800">Home</a>
+            <a href="#" class="hover:text-green-800">Cagnottes</a>
+            <a href="#" class="hover:text-green-800">Dons</a>
+            <a href="#" class="hover:text-green-800">Profil</a>
+        </nav>
+
+        <!-- Actions -->
+        <div class="flex space-x-4 text-green-600">
+            <button class="px-4 py-2 bg-green-600 text-white rounded-lg">S'inscrire</button>
+            <button class="px-4 py-2 bg-green-200 text-green-600 rounded-lg">Se connecter</button>
+        </div>
+    </header>
+
+    <!-- Filter Dropdown -->
+    <div class="flex justify-end p-4">
+        <select class="border border-gray-300 rounded-full px-4 py-2 text-green-600">
+            <option>Toutes les catégories</option>
+            <option>Urgences Humanitaires</option>
+            <option>Santé et Bien-être</option>
+            <option>Éducation</option>
+            <!-- Ajouter d'autres catégories ici si nécessaire -->
+        </select>
+    </div>
+
+    <!-- Main Content -->
+    <main class="p-8 space-y-8 overflow-y-auto">
+        <!-- Titre de section pour Urgences Humanitaires -->
+        <h2 class="text-xl font-semibold mb-4 text-green-700">> Urgences Humanitaires</h2>
+        
+        <!-- Multiple Conteneurs de Cagnottes -->
+        <section class="space-y-8">
+            <!-- Conteneur de Cagnotte 1 -->
+            <div class="space-y-6">
+                <!-- Cagnotte Item -->
+                <div class="flex bg-white p-4 rounded-lg shadow-md border-2 border-green-100 space-x-4">
+                    <img src="https://via.placeholder.com/100x100" alt="Image du séisme" class="w-32 h-32 object-cover rounded-lg">
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-semibold text-green-700">Soutien aux victimes du séisme du Haouz</h3>
+                        <p class="text-gray-600 text-sm mb-2">
+                            Description: Le séisme dévastateur qui a frappé la région du Haouz a laissé des milliers de familles sans abri, sans ressources, et dans un besoin urgent d'assistance. 
+                        </p>
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="text-gray-600">But: <span class="font-semibold">100,000 MAD</span></div>
+                            <div class="text-green-600 font-semibold">Récolté: 64,029 MAD</div>
+                        </div>
+                        <!-- Barre de progression -->
+                        <div class="w-full bg-gray-200 rounded-full h-4 mb-4">
+                            <div class="bg-green-500 h-4 rounded-full" style="width: 64%;"></div>
+                        </div>
+                        <div class="flex space-x-2 mb-2">
+                            <button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Argent</button>
+                            <button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Matériel</button>
+                        </div>
+                        <button class="px-4 py-2 bg-green-200 text-green-600 rounded-lg">Partager</button>
+                    </div>
+                </div>
+
+                <!-- Duplicate Cagnotte Item -->
+                <div class="flex bg-white p-4 rounded-lg shadow-md border-2 border-green-100 space-x-4">
+                    <img src="https://via.placeholder.com/100x100" alt="Image de Gaza" class="w-32 h-32 object-cover rounded-lg">
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-semibold text-green-700">Aide Urgente aux Victimes de la Tragédie à Gaza</h3>
+                        <p class="text-gray-600 text-sm mb-2">
+                            Description: La tragédie a laissé des milliers de personnes sans ressources essentielles, et cette cagnotte vise à fournir un soutien rapide.
+                        </p>
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="text-gray-600">But: <span class="font-semibold">500,000 MAD</span></div>
+                            <div class="text-green-600 font-semibold">Récolté: 1,784,705 MAD</div>
+                        </div>
+                        <!-- Barre de progression -->
+                        <div class="w-full bg-gray-200 rounded-full h-4 mb-4">
+                            <div class="bg-green-500 h-4 rounded-full" style="width: 100%;"></div>
+                        </div>
+                        <div class="flex space-x-2 mb-2">
+                            <button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Argent</button>
+                            <button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Matériel</button>
+                        </div>
+                        <button class="px-4 py-2 bg-green-200 text-green-600 rounded-lg">Partager</button>
+                    </div>
+                </div>
+                <!-- Titre de section pour Santé et Bien-être -->
+        <h2 class="text-xl font-semibold mb-4 text-green-700">> Santé et Bien-être</h2>
+
+                <div class="flex bg-white p-4 rounded-lg shadow-md border-2 border-green-100 space-x-4">
+                    <img src="https://via.placeholder.com/100x100" alt="Image de campagne" class="w-32 h-32 object-cover rounded-lg">
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-semibold text-green-700">Soutien pour la Recherche sur le Cancer</h3>
+                        <p class="text-gray-600 text-sm mb-2">
+                            Description: Aider à financer la recherche et les traitements pour les patients atteints de cancer.
+                        </p>
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="text-gray-600">But: <span class="font-semibold">300,000 MAD</span></div>
+                            <div class="text-green-600 font-semibold">Récolté: 250,000 MAD</div>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-4 mb-4">
+                            <div class="bg-green-500 h-4 rounded-full" style="width: 90%;"></div>
+                        </div>
+                        <div class="flex space-x-2 mb-2">
+                            <button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Argent</button>
+                            <button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Matériel</button>
+                        </div>
+                        <button class="px-4 py-2 bg-green-200 text-green-600 rounded-lg">Partager</button>
+                    </div>
+                </div>
+                
+                <div class="flex bg-white p-4 rounded-lg shadow-md border-2 border-green-100 space-x-4">
+                    <img src="https://via.placeholder.com/100x100" alt="Image de campagne" class="w-32 h-32 object-cover rounded-lg">
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-semibold text-green-700">Soutien pour la Recherche sur le Cancer</h3>
+                        <p class="text-gray-600 text-sm mb-2">
+                            Description: Aider à financer la recherche et les traitements pour les patients atteints de cancer.
+                        </p>
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="text-gray-600">But: <span class="font-semibold">300,000 MAD</span></div>
+                            <div class="text-green-600 font-semibold">Récolté: 250,000 MAD</div>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-4 mb-4">
+                            <div class="bg-green-500 h-4 rounded-full" style="width: 90%;"></div>
+                        </div>
+                        <div class="flex space-x-2 mb-2">
+                            <button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Argent</button>
+                            <button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Matériel</button>
+                        </div>
+                        <button class="px-4 py-2 bg-green-200 text-green-600 rounded-lg">Partager</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Autres sections ici pour Santé et Bien-être, etc. -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-4 bg-white text-center shadow-md">
+        <p class="text-gray-500">© 2023 Votre Site de Contribution</p>
+    </footer>
+
+</body>
+</html>
