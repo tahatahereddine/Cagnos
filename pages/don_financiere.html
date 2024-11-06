@@ -23,9 +23,9 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Navigation Links -->
-        <nav class="flex space-x-6 text-green-600">
+
+        <!-- Navigation Links for Desktop -->
+        <nav class="hidden md:flex space-x-6 text-green-600">
             <a href="#" class="hover:text-green-800">Home</a>
             <a href="#" class="hover:text-green-800">Cagnottes</a>
             <a href="#" class="hover:text-green-800">Dons</a>
@@ -41,8 +41,8 @@
 
     <!-- Contenu principal -->
     <main class="flex justify-center mt-8 space-x-8 px-4">
-        <!-- Section de description de la cagnotte -->
-        <div class="bg-white border border-green-300 p-6 rounded-lg shadow-lg w-full max-w-md">
+        <!-- Section de description de la cagnotte (Hidden on Mobile) -->
+        <div class="bg-white border border-green-300 p-6 rounded-lg shadow-lg w-full max-w-md hidden md:block">
             <h2 class="text-xl font-semibold text-green-700 mb-4">Soutien aux victimes du séisme du Haouz</h2>
             <img src="https://via.placeholder.com/300x200" alt="Image du séisme" class="w-full h-48 object-cover rounded-lg mb-4">
             <h3 class="font-semibold text-gray-700">Description</h3>
@@ -69,7 +69,6 @@
                 <option>MasterCard</option>
                 <option>Visa</option>
                 <option>PayPal</option>
-                <!-- Ajouter d'autres méthodes de paiement si nécessaire -->
             </select>
 
             <!-- Conditions d'utilisation -->
@@ -83,6 +82,34 @@
             <button class="w-full bg-green-500 text-white py-2 rounded-lg mt-6 hover:bg-green-600">Contribuer</button>
         </div>
     </main>
+
+    <!-- Bottom Navbar for Mobile -->
+    <nav class="md:hidden fixed inset-x-0 bottom-0 bg-white shadow-md border-t border-gray-300 text-green-600 flex justify-around p-2">
+        <a href="#" class="flex flex-col items-center space-y-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7m-9 12V9m4 5H3m5 0h4m0 0h4m4 4h-4" />
+            </svg>
+            <span class="text-xs">Home</span>
+        </a>
+        <a href="#" class="flex flex-col items-center space-y-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            </svg>
+            <span class="text-xs">Cagnottes</span>
+        </a>
+        <a href="#" class="flex flex-col items-center space-y-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h8m-4 4h-4m-4 4h16" />
+            </svg>
+            <span class="text-xs">Dons</span>
+        </a>
+        <a href="#" class="flex flex-col items-center space-y-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9 5-4.5 1-4.5-5-4.5 5-4.5-1 9-5zm-9-7a9 9 0 0118 0" />
+            </svg>
+            <span class="text-xs">Profil</span>
+        </a>
+    </nav>
 
 </body>
 </html>
