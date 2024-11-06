@@ -1,11 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cagnos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Contribution</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  
+<body class="bg-gray-100 font-sans h-screen">
+
+    <!-- Header -->
+    <header class="flex justify-between items-center p-4 bg-white shadow-md">
+        <div class="flex items-center space-x-4">
+            <!-- Logo -->
+            <div class="text-2xl font-bold text-green-600">Cagnos</div>
+            <!-- Barre de recherche -->
+            <div class="relative">
+                <input type="text" placeholder="Rechercher..." class="px-4 py-2 border rounded-full w-80 focus:outline-none focus:border-green-500">
+                <div class="absolute right-2 top-2 text-green-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16a8 8 0 1116 0 8 8 0 01-16 0zm12-2a8 8 0 11-4.5-7.75"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Links for Desktop -->
+        <nav class="hidden md:flex space-x-6 text-green-600">
+            <a href="#" class="hover:text-green-800">Home</a>
+            <a href="#" class="hover:text-green-800">Cagnottes</a>
+            <a href="#" class="hover:text-green-800">Dons</a>
+            <a href="#" class="hover:text-green-800">Profil</a>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="flex justify-center">
+        
+
+
+
+
+
+
+
+
+    </main>
+
+    <!-- Bottom Navbar for Mobile -->
+    <nav class="md:hidden fixed inset-x-0 bottom-0 bg-white shadow-md border-t border-gray-300 text-green-600 flex justify-around p-2">
+        <a href="#" class="flex flex-col items-center space-y-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7m-9 12V9m4 5H3m5 0h4m0 0h4m4 4h-4" />
+            </svg>
+            <span class="text-xs">Home</span>
+        </a>
+        <a href="#" class="flex flex-col items-center space-y-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            </svg>
+            <span class="text-xs">Cagnottes</span>
+        </a>
+        <a href="#" class="flex flex-col items-center space-y-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h8m-4 4h-4m-4 4h16" />
+            </svg>
+            <span class="text-xs">Dons</span>
+        </a>
+        <a href="#" class="flex flex-col items-center space-y-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9 5-4.5 1-4.5-5-4.5 5-4.5-1 9-5zm-9-7a9 9 0 0118 0" />
+            </svg>
+            <span class="text-xs">Profil</span>
+        </a>
+    </nav>
+
 </body>
 </html>
