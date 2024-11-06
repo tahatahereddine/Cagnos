@@ -12,7 +12,7 @@
     <header class="flex justify-between items-center p-4 bg-white shadow-md sticky top-0 z-10">
         <div class="flex items-center space-x-4">
             <!-- Logo -->
-            <div class="text-2xl font-bold text-green-600"><a href="../" class="hover:text-green-800">Cagnos</a></div>
+            <div class="text-2xl font-bold text-green-600">Cagnos</div>
             <!-- Search Bar -->
             <div class="relative">
                 <input type="text" placeholder="Rechercher..." class="px-4 py-2 border rounded-full w-80 focus:outline-none focus:border-green-500">
@@ -26,17 +26,12 @@
         
         <!-- Navigation Links -->
         <nav class="flex space-x-6 text-green-600">
-            <a href="../" class="hover:text-green-800">Home</a>
-            <a href="./ListesDesCagnottes" class="hover:text-green-800">Cagnottes</a>
-            <a href="./don_financiere" class="hover:text-green-800">Dons</a>
-            <a href="./profile" class="hover:text-green-800">Profil</a>
+            <a href="../index.html" class="hover:text-green-800">Home</a>
+            <a href="./creer_cagnote.html" class="hover:text-green-800">Créer des Cagnottes</a>
+            <a href="./ListesDesCagnottes.html" class="hover:text-green-800">Faire des Dons</a>
+            <a href="./profile.html" class="hover:text-green-800">Profil</a>
         </nav>
 
-        <!-- Actions -->
-        <div class="flex space-x-4 text-green-600">
-            <button class="px-4 py-2 bg-green-600 text-white rounded-lg">S'inscrire</button>
-            <button class="px-4 py-2 bg-green-200 text-green-600 rounded-lg">Se connecter</button>
-        </div>
     </header>
 
     <!-- Filter Dropdown -->
@@ -61,7 +56,7 @@
             <div class="space-y-6">
                 <!-- Cagnotte Item -->
                 <div class="flex bg-white p-4 rounded-lg shadow-md border-2 border-green-100 space-x-4">
-                    <img src="https://via.placeholder.com/100x100" alt="Image du séisme" class="w-32 h-32 object-cover rounded-lg">
+                    <img src="../Images/Haouz.jpg" alt="Image du séisme" class="w-32 h-32 object-cover rounded-lg">
                     <div class="flex-grow">
                         <h3 class="text-lg font-semibold text-green-700">Soutien aux victimes du séisme du Haouz</h3>
                         <p class="text-gray-600 text-sm mb-2">
@@ -76,8 +71,8 @@
                             <div class="bg-green-500 h-4 rounded-full" style="width: 64%;"></div>
                         </div>
                         <div class="flex space-x-2 mb-2">
-                            <button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Argent</button>
-                            <button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Matériel</button>
+                            <a href="./don_financiere.html"><button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Argent</button></a>
+                            <a href="./don_materiel.html"><button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Matériel</button></a>
                         </div>
                         <button class="px-4 py-2 bg-green-200 text-green-600 rounded-lg">Partager</button>
                     </div>
@@ -85,7 +80,7 @@
 
                 <!-- Duplicate Cagnotte Item -->
                 <div class="flex bg-white p-4 rounded-lg shadow-md border-2 border-green-100 space-x-4">
-                    <img src="https://via.placeholder.com/100x100" alt="Image de Gaza" class="w-32 h-32 object-cover rounded-lg">
+                    <img src="../Images/Gaza.jpg" alt="Image de Gaza" class="w-32 h-32 object-cover rounded-lg">
                     <div class="flex-grow">
                         <h3 class="text-lg font-semibold text-green-700">Aide Urgente aux Victimes de la Tragédie à Gaza</h3>
                         <p class="text-gray-600 text-sm mb-2">
@@ -100,8 +95,8 @@
                             <div class="bg-green-500 h-4 rounded-full" style="width: 100%;"></div>
                         </div>
                         <div class="flex space-x-2 mb-2">
-                            <button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Argent</button>
-                            <button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Matériel</button>
+                            <a href="./don_financiere.html"><button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Argent</button></a>
+                            <a href="./don_materiel.html"><button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Matériel</button></a>
                         </div>
                         <button class="px-4 py-2 bg-green-200 text-green-600 rounded-lg">Partager</button>
                     </div>
@@ -110,7 +105,7 @@
         <h2 class="text-xl font-semibold mb-4 text-green-700">> Santé et Bien-être</h2>
 
                 <div class="flex bg-white p-4 rounded-lg shadow-md border-2 border-green-100 space-x-4">
-                    <img src="https://via.placeholder.com/100x100" alt="Image de campagne" class="w-32 h-32 object-cover rounded-lg">
+                    <img src="../Images/img3.jpg" alt="Image de campagne" class="w-32 h-32 object-cover rounded-lg">
                     <div class="flex-grow">
                         <h3 class="text-lg font-semibold text-green-700">Soutien pour la Recherche sur le Cancer</h3>
                         <p class="text-gray-600 text-sm mb-2">
@@ -124,15 +119,15 @@
                             <div class="bg-green-500 h-4 rounded-full" style="width: 90%;"></div>
                         </div>
                         <div class="flex space-x-2 mb-2">
-                            <button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Argent</button>
-                            <button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Matériel</button>
+                            <a href="./don_financiere.html"><button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Argent</button></a>
+                            <a href="./don_materiel.html"><button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Matériel</button></a>
                         </div>
                         <button class="px-4 py-2 bg-green-200 text-green-600 rounded-lg">Partager</button>
                     </div>
                 </div>
                 
                 <div class="flex bg-white p-4 rounded-lg shadow-md border-2 border-green-100 space-x-4">
-                    <img src="https://via.placeholder.com/100x100" alt="Image de campagne" class="w-32 h-32 object-cover rounded-lg">
+                    <img src="../Images/img3.jpg" alt="Image de campagne" class="w-32 h-32 object-cover rounded-lg">
                     <div class="flex-grow">
                         <h3 class="text-lg font-semibold text-green-700">Soutien pour la Recherche sur le Cancer</h3>
                         <p class="text-gray-600 text-sm mb-2">
@@ -146,8 +141,8 @@
                             <div class="bg-green-500 h-4 rounded-full" style="width: 90%;"></div>
                         </div>
                         <div class="flex space-x-2 mb-2">
-                            <button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Argent</button>
-                            <button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Matériel</button>
+                            <a href="./don_financiere.html"><button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Argent</button></a>
+                            <a href="./don_materiel.html"><button class="px-4 py-2 bg-green-500 text-white rounded-lg">Don Matériel</button></a>
                         </div>
                         <button class="px-4 py-2 bg-green-200 text-green-600 rounded-lg">Partager</button>
                     </div>
