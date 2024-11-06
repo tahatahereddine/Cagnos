@@ -16,7 +16,7 @@ $(document).ready(function() {
 
     // Met à jour la position du slider
     function updateSliderPosition() {
-        const newLeft = -(currentIndex * 33) + '%'; // Décalage de 100% pour chaque image
+        const newLeft = -(currentIndex * 25) + '%'; // Décalage de 100% pour chaque image (avec 4 images, chaque image occupe 25%)
         $('.slider').css('transform', `translateX(${newLeft})`);
 
         // Met à jour les points de navigation
