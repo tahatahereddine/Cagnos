@@ -25,10 +25,10 @@
         </div>
         
         <!-- Navigation Links -->
-        <nav class="flex space-x-6 text-green-600">
+        <nav class="hidden md:flex space-x-6 text-green-600">
             <a href="../index.html" class="hover:text-green-800">Home</a>
             <a href="./creer_cagnote.html" class="hover:text-green-800">Créer des Cagnottes</a>
-            <a href="./ListesDesCagnottes.html" class="hover:text-green-800">Faire des Dons</a>
+            <a href="#" class="hover:text-green-800">Faire des Dons</a>
             <a href="./profile.html" class="hover:text-green-800">Profil</a>
         </nav>
 
@@ -155,9 +155,33 @@
     </main>
 
     <!-- Footer -->
-    <footer class="p-4 bg-white text-center shadow-md">
-        <p class="text-gray-500">© 2023 Votre Site de Contribution</p>
-    </footer>
+    <!-- Bottom Navbar for Mobile -->
+    <nav class="md:hidden fixed inset-x-0 bottom-0 bg-white shadow-md border-t border-gray-300 text-green-600 flex justify-around p-2">
+        <a href="../index.html" class="flex flex-col items-center space-y-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7m-9 12V9m4 5H3m5 0h4m0 0h4m4 4h-4" />
+            </svg>
+            <span class="text-xs">Home</span>
+        </a>
+        <a href="./creer_cagnote.html" class="flex flex-col items-center space-y-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            </svg>
+            <span class="text-xs">Cagnottes</span>
+        </a>
+        <a href="#" class="flex flex-col items-center space-y-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h8m-4 4h-4m-4 4h16" />
+            </svg>
+            <span class="text-xs">Dons</span>
+        </a>
+        <a href="./profile.html" class="flex flex-col items-center space-y-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9 5-4.5 1-4.5-5-4.5 5-4.5-1 9-5zm-9-7a9 9 0 0118 0" />
+            </svg>
+            <span class="text-xs">Profil</span>
+        </a>
+    </nav>
 
 </body>
 </html>
