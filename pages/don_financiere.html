@@ -57,11 +57,11 @@
             
             <!-- Slider pour le montant -->
             <label class="block text-gray-600 font-medium mb-2">Entrer le montant</label>
-            <input type="range" min="10" max="10000" value="7000" class="w-full">
+            <input type="range" id="rangeSlider" min="10" max="10000" value="7000" class="w-full">
             <div class="flex justify-between text-gray-600 text-sm mt-1">
                 <span>10</span><span>10000 MAD</span>
             </div>
-            <input type="text" value="7000" class="w-full mt-2 p-2 border rounded-lg text-center">
+            <input type="text" id="textInput" value="7000" class="w-full mt-2 p-2 border rounded-lg text-center">
 
             <!-- Choix de la méthode de paiement -->
             <label class="block text-gray-600 font-medium mt-4 mb-2">Choisir la méthode du paiement</label>
@@ -110,6 +110,27 @@
             <span class="text-xs">Profil</span>
         </a>
     </nav>
+
+
+    <script>
+        // Get references to the slider and text input elements
+        const rangeSlider = document.getElementById('rangeSlider');
+        const textInput = document.getElementById('textInput');
+
+        // Update text input value when the slider changes
+        rangeSlider.addEventListener('input', function() {
+            textInput.value = rangeSlider.value;
+        });
+
+        // Update slider value when the text input changes
+        textInput.addEventListener('input', function() {
+            // Ensure the text input value stays within the slider range
+            let value = parseInt(textInput.value);
+            if (value < rangeSlider.min) value = rangeSlider.min;
+            if (value > rangeSlider.max) value = rangeSlider.max;
+            rangeSlider.value = value;
+        });
+    </script>
 
 </body>
 </html>
