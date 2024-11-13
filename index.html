@@ -12,12 +12,11 @@
 
 <body class="bg-gray-100 font-sans h-screen">
 
-    <!-- Header -->
     <header class="flex justify-between items-center p-4 bg-white shadow-md">
         <div class="flex items-center space-x-4">
-            <!-- Logo -->
+
             <div class="text-2xl font-bold text-green-600"><a href="./index.html" class="hover:text-green-800">Cagnos</a></div>
-            <!-- Barre de recherche -->
+
             <div class="relative">
                 <input type="text" placeholder="Rechercher..." class="px-4 py-2 border rounded-full w-80 focus:outline-none 
                 focus:border-green-500">
@@ -30,7 +29,6 @@
             </div>
         </div>
 
-        <!-- Navigation Links for Desktop -->
         <nav class="hidden sm:flex space-x-6 text-green-600 ">
             <a href="./index.html" class="hover:text-green-800">Home</a>
             <a href="./pages/creer_cagnote.html" class="hover:text-green-800">Créer des Cagnottes</a>
@@ -39,15 +37,12 @@
         </nav>
     </header>
 
-    <!-- Contenu principal -->
     <main class="flex justify-center flex-col">
-        <!-- Slider Section -->
         <div class="mt-4">
             <div class="container mx-auto overflow-hidden">
                 <div class="relative mx-auto h-[60vh] md:w-[1000px] md:h-[500px] overflow-hidden shadow-lg">
                     <div class="slider flex transition-transform duration-500 ease-in-out" style="width: 400%">
                         
-                        <!-- Image 1 with hover text -->
                         <div class="relative w-full h-[60vh] md:h-[500px]">
                             <img src="Images/img1.jpg" alt="Image 1" class="w-full h-full object-cover">
                             <div class="absolute inset-0 bg-black bg-opacity-50 text-white flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity" onclick="window.location.href='pages/ListesDesCagnottes.html';">
@@ -58,7 +53,6 @@
                             </div>
                         </div>
 
-                        <!-- Image 2 with hover text -->
                         <div class="relative w-full h-[60vh] md:h-[500px]">
                             <img src="Images/img2.jpg" alt="Image 2" class="w-full h-full object-cover">
                             <div class="absolute inset-0 bg-black bg-opacity-50 text-white flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity" onclick="window.location.href='pages/ListesDesCagnottes.html';">
@@ -69,7 +63,6 @@
                             </div>
                         </div>
 
-                        <!-- Image 3 with hover text -->
                         <div class="relative w-full h-[60vh] md:h-[500px]">
                             <img src="Images/img3.jpg" alt="Image 3" class="w-full h-full object-cover">
                             <div class="absolute inset-0 bg-black bg-opacity-50 text-white flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity" onclick="window.location.href='pages/ListesDesCagnottes.html';">
@@ -80,7 +73,6 @@
                             </div>
                         </div>
 
-                        <!-- Image 4 with hover text -->
                         <div class="relative w-full h-[60vh] md:h-[500px]">
                             <img src="Images/img4.jpg" alt="Image 4" class="w-full h-full object-cover">
                             <div class="absolute inset-0 bg-black bg-opacity-50 text-white flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity" onclick="window.location.href='pages/ListesDesCagnottes.html';">
@@ -93,7 +85,6 @@
                         
                     </div>
             
-                    <!-- Navigation Buttons -->
                     <button class="btn-prev absolute left-1 top-1/2 transform -translate-y-1/2 text-white text-2xl md:text-3xl bg-green-600 rounded-full p-2 hover:bg-green-700 transition">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -105,7 +96,6 @@
                         </svg>
                     </button>
             
-                    <!-- Navigation dots positioned just under the slider -->
                     <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-2">
                         <div class="dot w-2 h-2 md:w-3 md:h-3 bg-green-600 rounded-full cursor-pointer"></div>
                         <div class="dot w-2 h-2 md:w-3 md:h-3 bg-gray-300 rounded-full cursor-pointer"></div>
@@ -119,31 +109,28 @@
         
         
 
-        <!-- About Us Section -->
-<div class="text-center mt-12">
-    <h1 class="text-4xl font-bold border-b-4 border-green-600 inline-block">À propos de Cagnos</h1>
-    <p class="text-lg text-gray-600 mt-4">Dans un monde où des millions de personnes vivent dans la pauvreté, où des crises économiques, sanitaires et climatiques frappent durement les plus vulnérables, l'aide humanitaire est plus que jamais nécessaire. Cagnos se mobilise pour améliorer la vie de ceux qui en ont le plus besoin.</p>
-</div>
+        <div class="text-center mt-12">
+            <h1 class="text-4xl font-bold border-b-4 border-green-600 inline-block">À propos de Cagnos</h1>
+            <p class="text-lg text-gray-600 mt-4">Dans un monde où des millions de personnes vivent dans la pauvreté, où des crises économiques, sanitaires et climatiques frappent durement les plus vulnérables, l'aide humanitaire est plus que jamais nécessaire. Cagnos se mobilise pour améliorer la vie de ceux qui en ont le plus besoin.</p>
+        </div>
 
-<!-- About Section with Image on the left and text on the right -->
-<div class="container mx-auto mt-10 px-4">
-    <section class="flex items-center justify-between space-y-8 md:space-y-0">
-        <div class="w-full md:w-1/2 overflow-hidden rounded-lg">
-            <img src="Images/background.jpg" alt="Cagnos Help" class="transition-transform transform hover:scale-110">
+        <div class="container mx-auto mt-10 px-4">
+            <section class="flex items-center justify-between space-y-8 md:space-y-0">
+                <div class="w-full md:w-1/2 overflow-hidden rounded-lg">
+                    <img src="Images/background.jpg" alt="Cagnos Help" class="transition-transform transform hover:scale-110">
+                </div>
+                <div class="w-full md:w-1/2 space-y-4 text-left ml-4">
+                    <h2 class="text-2xl font-semibold">Aider ceux qui en ont besoin</h2>
+                    <p class="text-gray-700">Cagnos est une association qui œuvre pour apporter un soutien aux plus démunis dans le monde. Nous luttons contre la pauvreté, l'isolement et les injustices sociales, en fournissant de l'aide directe, des ressources et un accès à des opportunités pour améliorer leur quotidien. Nos actions incluent des programmes de dons, de collecte de fonds, et de soutien communautaire.</p>
+                    <p class="text-gray-700">Notre mission est simple : apporter un changement positif et durable dans la vie de ceux qui souffrent, qu'il s'agisse de fournir des repas, des soins de santé ou des opportunités d'éducation. Chaque contribution fait une différence, et avec votre aide, nous pouvons continuer à faire avancer cette noble cause.</p>
+                    <a href="pages/ListesDesCagnottes.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition">Soutenez notre cause</a>
+                </div>
+                
+            </section>
         </div>
-        <div class="w-full md:w-1/2 space-y-4 text-left ml-4">
-            <h2 class="text-2xl font-semibold">Aider ceux qui en ont besoin</h2>
-            <p class="text-gray-700">Cagnos est une association qui œuvre pour apporter un soutien aux plus démunis dans le monde. Nous luttons contre la pauvreté, l'isolement et les injustices sociales, en fournissant de l'aide directe, des ressources et un accès à des opportunités pour améliorer leur quotidien. Nos actions incluent des programmes de dons, de collecte de fonds, et de soutien communautaire.</p>
-            <p class="text-gray-700">Notre mission est simple : apporter un changement positif et durable dans la vie de ceux qui souffrent, qu'il s'agisse de fournir des repas, des soins de santé ou des opportunités d'éducation. Chaque contribution fait une différence, et avec votre aide, nous pouvons continuer à faire avancer cette noble cause.</p>
-            <a href="pages/ListesDesCagnottes.html" class="inline-block bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition">Soutenez notre cause</a>
-        </div>
-        
-    </section>
-</div>
 
     </main>
 
-    <!-- Bottom Navbar for Mobile -->
     <nav class="sm:hidden fixed bottom-0 left-0 right-0 bg-green-600 text-white flex justify-around p-4">
         <a href="./index.html" class="flex flex-col items-center text-white">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">

@@ -8,12 +8,11 @@
 </head>
 <body class="bg-gray-100 font-sans h-screen">
 
-    <!-- Header -->
     <header class="flex justify-between items-center p-4 bg-white shadow-md">
         <div class="flex items-center space-x-4">
-            <!-- Logo -->
+
             <div class="text-2xl font-bold text-green-600"><a href="../index.html" class="hover:text-green-800">Cagnos</a></div>
-            <!-- Barre de recherche -->
+
             <div class="relative">
                 <input type="text" placeholder="Rechercher..." class="px-4 py-2 border rounded-full w-80 focus:outline-none focus:border-green-500">
                 <div class="absolute right-2 top-2 text-green-600">
@@ -24,7 +23,7 @@
             </div>
         </div>
 
-        <!-- Navigation Links for Desktop -->
+
         <nav class="hidden md:flex space-x-6 text-green-600">
             <a href="../index.html" class="hover:text-green-800">Home</a>
             <a href="./creer_cagnote.html" class="hover:text-green-800">Créer des Cagnottes</a>
@@ -33,15 +32,13 @@
         </nav>
     </header>
 
-    <!-- Section de contribution -->
     <div class="flex justify-center mt-6">
         <a href="don_materiel.html" class="px-6 py-2 border border-green-400 text-green-600 rounded-l-lg hover:bg-green-100">Contribuer par matériel</a>
         <a class="px-6 py-2 bg-green-500 text-white rounded-r-lg">Contribuer par argent</a>
     </div>
 
-    <!-- Contenu principal -->
     <main class="flex justify-center mt-8 space-x-8 px-4">
-        <!-- Section de description de la cagnotte (Hidden on Mobile) -->
+
         <div class="bg-white border border-green-300 p-6 rounded-lg shadow-lg w-full max-w-md hidden md:block">
             <h2 class="text-xl font-semibold text-green-700 mb-4">Soutien aux victimes du séisme du Haouz</h2>
             <img src="../Images/Haouz.jpg" alt="Image du séisme" class="w-full h-48 object-cover rounded-lg mb-4">
@@ -51,11 +48,9 @@
             </p>
         </div>
 
-        <!-- Section du formulaire de contribution -->
         <div class="bg-white border border-green-300 p-6 rounded-lg shadow-lg w-full max-w-md">
             <h3 class="text-lg font-semibold text-gray-700 mb-4">Informations pour contribuer</h3>
             
-            <!-- Slider pour le montant -->
             <label class="block text-gray-600 font-medium mb-2">Entrer le montant</label>
             <input type="range" id="rangeSlider" min="10" max="10000" value="7000" class="w-full">
             <div class="flex justify-between text-gray-600 text-sm mt-1">
@@ -63,7 +58,6 @@
             </div>
             <input type="text" id="textInput" value="7000" class="w-full mt-2 p-2 border rounded-lg text-center">
 
-            <!-- Choix de la méthode de paiement -->
             <label class="block text-gray-600 font-medium mt-4 mb-2">Choisir la méthode du paiement</label>
             <select class="w-full border p-2 rounded-lg text-gray-600">
                 <option>MasterCard</option>
@@ -71,19 +65,17 @@
                 <option>PayPal</option>
             </select>
 
-            <!-- Conditions d'utilisation -->
             <div class="flex items-center mt-4">
                 <input type="checkbox" class="form-checkbox text-green-500">
                 <label class="ml-2 text-gray-600 text-sm">J'accepte les termes et les conditions</label>
             </div>
             <a href="#" class="text-green-500 text-sm underline mt-1 block">Lire nos T&Cs</a>
 
-            <!-- Bouton de contribution -->
             <button class="w-full bg-green-500 text-white py-2 rounded-lg mt-6 hover:bg-green-600">Contribuer</button>
         </div>
     </main>
 
-    <!-- Bottom Navbar for Mobile -->
+
     <nav class="sm:hidden fixed bottom-0 left-0 right-0 bg-green-600 text-white flex justify-around p-4">
         <a href="../index.html" class="flex flex-col items-center text-white">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -110,18 +102,15 @@
 
 
     <script>
-        // Get references to the slider and text input elements
+        // slider interactif
         const rangeSlider = document.getElementById('rangeSlider');
         const textInput = document.getElementById('textInput');
 
-        // Update text input value when the slider changes
         rangeSlider.addEventListener('input', function() {
             textInput.value = rangeSlider.value;
         });
 
-        // Update slider value when the text input changes
         textInput.addEventListener('input', function() {
-            // Ensure the text input value stays within the slider range
             let value = parseInt(textInput.value);
             if (value < rangeSlider.min) value = rangeSlider.min;
             if (value > rangeSlider.max) value = rangeSlider.max;
